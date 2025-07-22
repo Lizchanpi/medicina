@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medicina</title>
+  <style>
+    body {
+      background-color: #cceeff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .semestre {
+      background-color: white;
+      border-radius: 16px;
+      padding: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .semestre h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .curso {
+      background-color: #e0f7ff;
+      border-radius: 12px;
+      padding: 8px 12px;
+      margin: 6px 0;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    .curso.tachado {
+      text-decoration: line-through;
+      background-color: #aacfd4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Medicina</h1>
+  <div class="grid-container">
+    <!-- Semestres 1 a 12 -->
+    <!-- El contenido completo de los semestres va aquí (omitido por espacio) -->
+    <div class="semestre"><h2>I Semestre</h2>
+      <div class="curso">Biología molecular y celular</div>
+      <div class="curso">ICS</div>
+      <div class="curso">HDM</div>
+      <div class="curso">Español</div>
+      <div class="curso">Matemáticas</div>
+      <div class="curso">HDP</div>
+      <div class="curso">Química</div>
+    </div>
+    <div class="semestre"><h2>II Semestre</h2>
+      <div class="curso">Química orgánica</div>
+      <div class="curso">Biofísica</div>
+      <div class="curso">Biología molecular y celular II</div>
+      <div class="curso">SARS</div>
+      <div class="curso">Geografía de Panamá</div>
+      <div class="curso">Bioestadística</div>
+    </div>
+    <div class="semestre"><h2>III Semestre</h2>
+      <div class="curso">Bioquímica humana</div>
+      <div class="curso">Anatomía</div>
+      <div class="curso">Embriología</div>
+    </div>
+    <div class="semestre"><h2>IV Semestre</h2>
+      <div class="curso">Inmunología médica</div>
+      <div class="curso">Microbiología médica</div>
+      <div class="curso">Histología</div>
+      <div class="curso">Neuroanatomía</div>
+      <div class="curso">Inglés</div>
+    </div>
+    <div class="semestre"><h2>V Semestre</h2>
+      <div class="curso">Antropología</div>
+      <div class="curso">Psicología médica</div>
+      <div class="curso">Medicina preventiva II</div>
+      <div class="curso">Fisiología</div>
+      <div class="curso">Parasitología</div>
+      <div class="curso">Genética médica</div>
+    </div>
+    <div class="semestre"><h2>VI Semestre</h2>
+      <div class="curso">Atención primaria de salud I</div>
+      <div class="curso">Farmacología</div>
+      <div class="curso">Nutrición</div>
+      <div class="curso">Metodología de la investigación</div>
+    </div>
+    <div class="semestre"><h2>VII Semestre</h2>
+      <div class="curso">Fisiopatología</div>
+      <div class="curso">Patología humana</div>
+      <div class="curso">HDRP</div>
+      <div class="curso">Psicopatología</div>
+      <div class="curso">Atención primaria de la salud II</div>
+      <div class="curso">Medicina preventiva II</div>
+      <div class="curso">Epidemiología III</div>
+    </div>
+    <div class="semestre"><h2>VIII Semestre</h2>
+      <div class="curso">Medicina interna infectología</div>
+      <div class="curso">HDRP II</div>
+      <div class="curso">Deontología</div>
+      <div class="curso">Imagenología diagnóstica</div>
+      <div class="curso">Pediatría I</div>
+    </div>
+    <div class="semestre"><h2>IX Semestre</h2>
+      <div class="curso">Pediatría II</div>
+      <div class="curso">Obstetricia</div>
+      <div class="curso">Medicina interna II Neuro Cardio Nefro</div>
+      <div class="curso">Medicina preventiva II</div>
+    </div>
+    <div class="semestre"><h2>X Semestre</h2>
+      <div class="curso">Ginecología</div>
+      <div class="curso">Medicina interna III Gastro</div>
+      <div class="curso">Medicina legal</div>
+      <div class="curso">Atención primaria de salud III</div>
+      <div class="curso">Cirugía I</div>
+    </div>
+    <div class="semestre"><h2>XI Semestre</h2>
+      <div class="curso">Ortopedia y traumatología</div>
+      <div class="curso">Psiquiatría</div>
+      <div class="curso">Medicina interna IV Geriatría Onco Endo</div>
+      <div class="curso">Cirugía II</div>
+      <div class="curso">Oftalmología</div>
+      <div class="curso">Otorrinolaringología</div>
+      <div class="curso">Bioética</div>
+    </div>
+    <div class="semestre"><h2>XII Semestre</h2>
+      <div class="curso">Terapéutica</div>
+      <div class="curso">Medicina preventiva V</div>
+      <div class="curso">Medicina de urgencias</div>
+      <div class="curso">Medicina familiar</div>
+      <div class="curso">Radiología correlativa</div>
+      <div class="curso">Cirugía III Neurocirugía (Neurourología)</div>
+    </div>
+  </div>
+  <script>
+    const cursos = document.querySelectorAll('.curso');
+    window.addEventListener('DOMContentLoaded', () => {
+      cursos.forEach(curso => {
+        const id = curso.textContent.trim();
+        if (localStorage.getItem(id) === 'tachado') {
+          curso.classList.add('tachado');
+        }
+      });
+    });
+    cursos.forEach(curso => {
+      curso.addEventListener('click', () => {
+        curso.classList.toggle('tachado');
+        const id = curso.textContent.trim();
+        if (curso.classList.contains('tachado')) {
+          localStorage.setItem(id, 'tachado');
+        } else {
+          localStorage.removeItem(id);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
